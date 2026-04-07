@@ -10,19 +10,19 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IMMU-MD~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoid0h0T1JTV2t3bVRyeUdMeENRZ0w2OFBUcCtVbmJ3T1IwNVJUSDhPU3BGdz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoicWJ1RWloenVmbm5QeVl2RkVnMExEdzRGZmYrVENpM0lDQk9vcXlGbWZRbz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI0TDBGVG8rWUx5bDE3Tnc4YzBGek16RW95OEZBSVhMWlZmMG93TnZ4SG1vPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJhQ3VyaWlzWmNvS2pqbWUyKy94SDFuOEFranN0ajJKeSt1dUlVV2NyOFI0PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkFPeU1pQjlEeUxZSlJFZlFNYlRCVkdid0ljalRtMktUMkRIanFVOVB2WE09In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik9UMWZ4a2s0NUdxamZHV250RnF3ODVRc0FoKzNXeTM1QlJuV1MxWnpGRk09In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTU9Cb1JFSXpqcHVuc3NqeEJLT1dCaHhLM3ZqUDBhNUUwOGRmMGUrTk8xaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidlFaQkxFcUxXbEYyYVJkRkZMc3pFSFZjaDEyMUpYZGhSZ0I3Nk9WbG1Dbz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ikozb1VzdjVZaEZGNmszZjJtZ3RvcVJjYjVzOGtqVGpNOXZCa0RabjlBQ3lPL0dyZ2grNVhRSGxZQ0EyZ2ZtaEpQQVJhdlpaMlk1aElMWmhQNXpoY0RnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTMxLCJhZHZTZWNyZXRLZXkiOiJiSU5lNFBESys2WjN4N3lKYUxTdEIwU2xXbXEzdDhHMlpJQm9veDNoUXFvPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6ODEzLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6ODEzLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJyZWdpc3RlcmVkIjp0cnVlLCJwYWlyaW5nQ29kZSI6IldCNFBXNU1GIiwibWUiOnsiaWQiOiIyNjM3NzYyMjE0ODI6NkBzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiJ1bnJlYWxpc3RpYyIsImxpZCI6IjE0NDUxNzYzMDA1NDQ4Mzo2QGxpZCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDTUNyMFhjUTJZVFd6Z1lZQVNBQUtBQT0iLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiVXMxc29ZYmVFeFBtQy9BY3hCSktzOStVTGs3dDY1bzMvb3Y2aTJuWkFGST0iLCJhY2NvdW50U2lnbmF0dXJlIjoiaHpGOVRPYlBYTWV0Q3U2bFRoZ3lNL3BsZk9KTUwxUTFQK2dvbkF2czAwSm9IcHlOUEVKTi94VWN3ZUd4YXJFM2U0Ym9iLzJyU3pVV3kxQnJoUWxERFE9PSIsImRldmljZVNpZ25hdHVyZSI6IklSVExiSDMyZE1FeFE3V0puWmtlN05IUjM4aGQwUzBIV1RyNUdMY0I0TTROWGk2Ti9wOWRhNVB2TE1VMU15cFFSZ2MybmxROEdMTjZ4bytoaVc5NEFnPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMTQ0NTE3NjMwMDU0NDgzOjZAbGlkIiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlZMTmJLR0czaE1UNWd2d0hNUVNTclBmbEM1TzdldWFOLzZMK290cDJRQlMifX1dLCJwbGF0Zm9ybSI6InNtYmEiLCJyb3V0aW5nSW5mbyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNBMElCUWdTIn0sImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTc3NTYwMDIyMywibGFzdFByb3BIYXNoIjoiM21sMWpTIn0=",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
-    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "𝐈ᴍᴍυ Mᴅ",  // Bot's display name
+    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "Unrealistic Mᴅ",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/XRI-DOUBLE07/IMMU-MD/forkhttps://github.com/XRI-DOUBLE07/IMMU-MD/fork",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "923493114170",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "𝐈ᴍᴍυ Mᴅ",           // Owner's name
-    DEV: process.env.DEV || "923493114170",                     // Developer's contact number
-    DEVELOPER_NUMBER: '923493114170@s.whatsapp.net',            // Developer's WhatsApp ID
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "263776221482",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Unrealistic Mᴅ",           // Owner's name
+    DEV: process.env.DEV || "263776221482",                     // Developer's contact number
+    DEVELOPER_NUMBER: '263776221482@s.whatsapp.net',            // Developer's WhatsApp ID
 
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
